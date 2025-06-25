@@ -36,7 +36,7 @@ def play_today_file():
     st.session_state.current_day += 1
     played_today = {}
 
-    for filetype in ['audio', ' 'video', 'pdf']:
+    for filetype in ['audio','video', 'pdf']:
         files = st.session_state.media_files[filetype]
         if files:
             index = (st.session_state.current_day - 1) % len(files)
